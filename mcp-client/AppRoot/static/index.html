@@ -1,1 +1,62 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LLM Chat UI</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="chat-container">
+  
+	<div class="uf-logo-container">
+	  <img src="uf.png" alt="University of Florida Logo" class="uf-logo" />
+	</div>
+  
+    <header class="chat-header">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h2>MCP Chat</h2>
+      <button type="button" class="new-chat-btn" title="New Chat" aria-label="New Chat">
+        <span class="material-icons">add_circle</span>
+        New Chat
+      </button>
+    </header>
+ 
+    <main id="chat-messages" class="chat-messages"></main>
+     <form id="chat-form" autocomplete="off" class="chat-form">
+      <div class="input-area">
+        <textarea
+          id="chat-input"
+          placeholder="Ask anything..."
+          rows="5"
+          required
+          spellcheck="true"
+        ></textarea>
+ 
+        <div class="input-buttons">
+          <button type="button" class="icon-btn" title="Attach" aria-label="Attach">
+            <span class="material-icons">attach_file</span>
+            Attach
+          </button>
+          <button type="button" class="icon-btn" title="Search" aria-label="Search">
+            <span class="material-icons">public</span>
+            Search
+          </button>
+          <button type="button" class="icon-btn" title="Reason" aria-label="Reason">
+            <span class="material-icons">lightbulb</span>
+            Reason
+          </button>
+        </div>
+      </div>
+ 
+      <button type="submit" class="send-button" aria-label="Send">
+        <img src="gator.png" alt="Send" class="send-icon" />
+      </button>
+    </form>
+  </div>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
